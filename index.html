@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-PT" id="top">
+<html lang="pt-BR" id="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>AG47 — Mais marcações para clínicas dentárias em Portugal</title>
+    <title>AG47 — Marketing, Desenvolvimento e Vendas</title>
     <meta
       name="description"
-      content="Ajudamos clínicas dentárias em Portugal a encher a agenda em 30 dias com landing page, tráfego pago e automação de follow-up. Diagnóstico gratuito em 15 min."
+      content="A AG47 impulsiona crescimento com estratégias de marketing, desenvolvimento de web apps, micro SaaS e foco em vendas."
     />
 
     <!-- Canonical / robots -->
@@ -18,11 +18,11 @@
 
     <!-- Social sharing / previews -->
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_PT" />
-    <meta property="og:title" content="AG47 — Mais marcações para clínicas dentárias" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="AG47 — Marketing, Desenvolvimento e Vendas" />
     <meta
       property="og:description"
-      content="Encha a agenda da sua clínica em 30 dias com landing page + anúncios + automação de follow-up. Diagnóstico gratuito em 15 min."
+      content="Criação e vendas com tecnologia: funis, web apps e micro SaaS para acelerar o crescimento do seu negócio."
     />
     <!-- TODO: substituir pela URL final quando publicar -->
     <meta property="og:url" content="https://example.com" />
@@ -30,46 +30,53 @@
     <meta property="og:image" content="og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Performance: use system fonts to keep it fast; add webfonts later if desired -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar para o conteúdo</a>
 
     <header class="hero">
-      <div class="container nav">
+      <nav class="nav container" aria-label="Navegação principal">
         <a class="brand" href="#top" aria-label="Ir para o topo">AG47</a>
-        <a class="btn btn-outline" href="#cta-final">Agendar diagnóstico</a>
-      </div>
+        <a class="btn btn-outline" href="#contato">Falar com a equipa</a>
+      </nav>
 
       <div class="container hero-grid">
         <div>
-          <p class="tag">Nicho: Clínicas dentárias em Portugal</p>
-          <h1>Encha a agenda da sua clínica com consultas (pagas) em 30 dias.</h1>
+          <p class="tag">Agência 47 · Marketing + Produto + Engenharia</p>
+          <h1>Criação, vendas e tecnologia para transformar ideias em resultados.</h1>
           <p class="subhead">
-            Criamos um sistema completo: landing page focada em conversão + anúncios locais +
-            automação de follow-up para recuperar leads.
+            Planeamos e executamos a operação digital: aquisição, conversão, retenção e produto.
+            Do site ao funil — da ideia ao lançamento.
           </p>
+
           <div class="cta-row">
-            <a class="btn btn-primary" href="#cta-final">Agendar diagnóstico (15 min)</a>
-            <a class="btn btn-ghost" href="#prova">Ver prova</a>
+            <a class="btn btn-primary" href="#contato">Quero crescer com a AG47</a>
+            <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
           </div>
+
           <ul class="quick-points" aria-label="Destaques">
-            <li>Setup em 7 dias</li>
-            <li>Sem contrato longo</li>
-            <li>Métricas semanais de ROI</li>
+            <li>Time multidisciplinar</li>
+            <li>Foco em performance e conversão</li>
+            <li>Produto + Marketing + Vendas</li>
           </ul>
         </div>
 
         <aside class="hero-card" aria-labelledby="diagnostico-title">
           <h2 id="diagnostico-title">Diagnóstico rápido</h2>
-          <p>Em 15 minutos mostramos onde está a perder marcações e o plano para recuperar receita.</p>
+          <p>
+            Em 15 minutos alinhamos objetivo, oferta e canal — e sairá com um plano inicial de ação
+            (sem compromisso).
+          </p>
 
-          <!-- Mini-form (reduz fricção e melhora conversão) -->
           <form class="mini-form" action="#" method="post" novalidate>
             <label>
               Nome
               <input name="nome" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" placeholder="voce@empresa.com" required />
             </label>
             <label>
               WhatsApp / Telemóvel
@@ -78,28 +85,23 @@
                 type="tel"
                 inputmode="tel"
                 autocomplete="tel"
-                placeholder="+351 9xx xxx xxx"
-                required
+                placeholder="(11) 99999-9999"
               />
             </label>
             <label>
-              Cidade
-              <input name="cidade" type="text" autocomplete="address-level2" />
-            </label>
-            <label>
-              Tratamento principal
-              <select name="tratamento">
+              O que precisa agora?
+              <select name="objetivo">
                 <option value="">Selecionar</option>
-                <option>Implantes</option>
-                <option>Ortodontia</option>
-                <option>Branqueamento</option>
+                <option>Marketing & Growth (leads / performance)</option>
+                <option>WebApp / Sistema</option>
+                <option>Micro SaaS / Produto</option>
+                <option>Branding / Landing page</option>
                 <option>Outro</option>
               </select>
             </label>
 
-            <!-- Mantemos o fluxo simples: scroll para CTA final (onde pode haver Calendly/WhatsApp real) -->
             <button class="btn btn-primary" type="submit">Quero o diagnóstico</button>
-            <p class="small">Resposta em 24h úteis. Sem compromisso.</p>
+            <p class="small">Resposta em até 24h úteis. Sem spam.</p>
             <p class="form-status" role="status" aria-live="polite" hidden></p>
           </form>
         </aside>
@@ -107,88 +109,75 @@
     </header>
 
     <main id="main">
-      <section id="problema" class="section container">
-        <h2>Problema</h2>
-        <p class="lead">A sua clínica recebe contactos, mas poucos chegam a consulta paga.</p>
+      <section id="servicos" class="section container">
+        <h2>O que fazemos</h2>
+        <p class="lead">Serviços e produtos para gerar receita com consistência.</p>
+
         <div class="grid-3">
           <article class="card">
-            <h3>Leads frios</h3>
-            <p>Sem processo de follow-up, o potencial paciente perde interesse em 24h.</p>
+            <h3>Marketing & Growth</h3>
+            <p>
+              Estratégias de aquisição, conteúdo, automação e campanhas de performance para geração
+              contínua de leads.
+            </p>
           </article>
+
           <article class="card">
-            <h3>Dependência de indicação</h3>
-            <p>Quando as indicações baixam, a agenda fica com buracos e a faturação cai.</p>
+            <h3>Desenvolvimento WebApp</h3>
+            <p>
+              Criamos plataformas, áreas de cliente e sistemas sob medida com foco em usabilidade,
+              velocidade e escalabilidade.
+            </p>
           </article>
+
           <article class="card">
-            <h3>Custo por marcação alto</h3>
-            <p>Campanhas sem landing page convertem mal e desperdiçam orçamento.</p>
+            <h3>Micro SaaS & Produto</h3>
+            <p>
+              Validamos, desenvolvemos e lançamos soluções enxutas com potencial de receita recorrente
+              para nichos específicos.
+            </p>
           </article>
         </div>
       </section>
 
-      <section id="solucao" class="section section-alt">
-        <div class="container">
-          <h2>Solução</h2>
-          <p class="lead">Sistema completo de aquisição e conversão, orientado a receita.</p>
-          <div class="grid-3">
-            <article class="card">
-              <h3>1) Landing page de conversão</h3>
-              <p>Mensagem clara para o tratamento principal + CTA para marcação imediata.</p>
-            </article>
-            <article class="card">
-              <h3>2) Tráfego pago local</h3>
-              <p>Campanhas para pacientes na sua zona com controlo de CPL e taxa de marcação.</p>
-            </article>
-            <article class="card">
-              <h3>3) Automação de follow-up</h3>
-              <p>WhatsApp + email para recuperar contactos que ainda não agendaram.</p>
-            </article>
+      <section class="section section-alt">
+        <div class="container split">
+          <div>
+            <h2>Da estratégia à execução</h2>
+            <p class="lead">
+              Integramos branding, performance e tecnologia para construir operações digitais que
+              vendem todos os dias.
+            </p>
           </div>
+          <ul>
+            <li>Diagnóstico, posicionamento e proposta de valor</li>
+            <li>Plano de aquisição, conversão e retenção</li>
+            <li>Implementação técnica + otimização contínua</li>
+          </ul>
         </div>
       </section>
 
       <section id="prova" class="section container">
-        <h2>Prova (exemplo de cenário)</h2>
+        <h2>Resultados (exemplo de cenário)</h2>
         <div class="proof" role="group" aria-label="Cenário ilustrativo">
-          <p><strong>Orçamento mensal:</strong> €1.200 em anúncios</p>
-          <p><strong>Leads gerados:</strong> 80</p>
-          <p><strong>Taxa de marcação:</strong> 35% (28 consultas)</p>
-          <p><strong>Ticket médio:</strong> €320</p>
-          <p><strong>Receita potencial:</strong> €8.960</p>
+          <p><strong>Orçamento mensal:</strong> R$ 6.000 em tráfego</p>
+          <p><strong>Leads gerados:</strong> 120</p>
+          <p><strong>Taxa de conversão:</strong> 20% (24 vendas)</p>
+          <p><strong>Ticket médio:</strong> R$ 900</p>
+          <p><strong>Receita potencial:</strong> R$ 21.600</p>
         </div>
         <p class="small">
-          Nota: valores ilustrativos e dependem da zona, concorrência e tratamento. O objetivo é
-          acompanhar estes indicadores semanalmente para otimizar custo por marcação e margem.
+          Nota: valores ilustrativos e dependem do nicho, oferta, mercado e execução. O objetivo é
+          acompanhar indicadores semanalmente e otimizar CAC, LTV e margem.
         </p>
       </section>
 
-      <section id="oferta" class="section section-alt">
-        <div class="container">
-          <h2>Oferta</h2>
-          <p class="lead">Mais pacientes em 30 dias com risco reduzido.</p>
-          <div class="offer">
-            <ul>
-              <li>Landing page completa pronta para anúncios</li>
-              <li>Configuração e gestão de campanhas locais</li>
-              <li>Automação de follow-up em 3 etapas</li>
-              <li>Relatório semanal com CPL, marcações e ROI</li>
-              <li><strong>Bónus:</strong> script de atendimento para receção</li>
-            </ul>
-            <p class="guarantee">
-              Garantia operacional: se não entregarmos o sistema completo em 30 dias, devolvemos
-              100% da implementação.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="cta-final" class="section container final-cta">
-        <h2>Quer previsibilidade na agenda da sua clínica?</h2>
-        <p>Fale connosco hoje e receba um plano de aquisição em 24h.</p>
+      <section id="contato" class="section container final-cta">
+        <h2>Pronto para acelerar?</h2>
+        <p>Fale connosco hoje e receba um plano inicial em 24h.</p>
 
         <div class="cta-row">
           <a class="btn btn-primary" href="mailto:contato@ag47.com">Pedir plano por email</a>
-          <!-- TODO: se preferir WhatsApp, troque para https://wa.me/351XXXXXXXXX?text=... -->
           <a class="btn btn-ghost" href="#faq">Ver FAQ</a>
         </div>
 
@@ -202,22 +191,22 @@
         <div class="grid-3">
           <article class="card">
             <h3>Há fidelização?</h3>
-            <p>Não. Trabalhamos sem contrato longo — mantemos o foco em performance e transparência.</p>
+            <p>Não. Trabalhamos sem contrato longo — foco em performance e transparência.</p>
           </article>
           <article class="card">
             <h3>Qual o investimento mínimo?</h3>
-            <p>Depende da zona e do tratamento. No diagnóstico recomendamos um ponto de partida realista.</p>
+            <p>Depende do objetivo e do canal. No diagnóstico recomendamos um ponto de partida realista.</p>
           </article>
           <article class="card">
-            <h3>Em quanto tempo vemos leads?</h3>
-            <p>Normalmente após a campanha estar ativa. Em geral, a otimização é semanal.</p>
+            <h3>Em quanto tempo vemos resultados?</h3>
+            <p>Depende do funil. Tráfego pode gerar leads rápido; produto e SEO são médio/longo prazo.</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> AG47 · Sistemas de aquisição e conversão.</p>
+      <p>© <span id="year"></span> AG47 — Marketing, Desenvolvimento e Vendas.</p>
     </footer>
 
     <script>
@@ -233,10 +222,10 @@
 
           if (statusEl) {
             statusEl.hidden = false;
-            statusEl.textContent = "Obrigado! Já a seguir mostramos o próximo passo.";
+            statusEl.textContent = "Obrigado! Vamos contactar em breve.";
           }
 
-          document.getElementById("cta-final")?.scrollIntoView({ behavior: "smooth" });
+          document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
         });
       }
     </script>
