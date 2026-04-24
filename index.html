@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AG47 — Marketing, Desenvolvimento e Vendas</title>
+    <meta
+      name="description"
+      content="A AG47 impulsiona crescimento com estratégias de marketing, desenvolvimento de web apps, micro SaaS e foco em vendas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a class="brand" href="#">AG47</a>
+        <a class="btn btn-outline" href="#contato">Falar com a equipe</a>
+      </nav>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Agência de Marketing e Desenvolvimento</p>
+        <h1>Criação, vendas e tecnologia para transformar ideias em resultados.</h1>
+        <p class="subtitle">
+          Construímos funis, experiências digitais e produtos próprios (Micro SaaS e WebApp)
+          para acelerar o crescimento do seu negócio.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contato">Quero crescer com a AG47</a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <ul class="highlights">
+          <li>⚡ Time multidisciplinar</li>
+          <li>📈 Foco em performance e conversão</li>
+          <li>🧠 Produto + Marketing + Vendas</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section id="servicos" class="section container">
+        <h2>O que fazemos</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Marketing & Growth</h3>
+            <p>
+              Estratégias de aquisição, conteúdo, automação e campanhas de performance para
+              geração contínua de leads.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Desenvolvimento WebApp</h3>
+            <p>
+              Criamos plataformas, áreas de cliente e sistemas sob medida com foco em usabilidade,
+              velocidade e escalabilidade.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Micro SaaS & Produto</h3>
+            <p>
+              Validamos, desenvolvemos e lançamos soluções enxutas com potencial de receita
+              recorrente para nichos específicos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="container split">
+          <div>
+            <h2>Da estratégia à execução</h2>
+            <p>
+              Integramos branding, performance e tecnologia para construir operações digitais que
+              vendem todos os dias.
+            </p>
+          </div>
+          <ul>
+            <li>Diagnóstico e posicionamento</li>
+            <li>Plano de aquisição e retenção</li>
+            <li>Implementação técnica e otimização contínua</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="section container contact">
+        <h2>Vamos tirar seu projeto do papel?</h2>
+        <p>Fale com a AG47 e receba um plano inicial focado em crescimento real.</p>
+        <a class="btn btn-primary" href="mailto:contato@ag47.com">contato@ag47.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> AG47 — Marketing, Desenvolvimento e Vendas.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
